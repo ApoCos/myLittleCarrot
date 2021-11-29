@@ -1,0 +1,21 @@
+$clr-grey: rgb(102, 83, 83); 
+$clr-yellow: #f5fcbd;
+$clr-blue: #61dafb;
+$clr-white: rgb(248, 248, 248);
+$clr-green: rgb(9, 155, 9);
+$clr-orange: rgb(255, 172, 19);
+
+body {
+  background-color: $clr-green;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

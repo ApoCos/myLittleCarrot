@@ -1,0 +1,37 @@
+[
+    {
+        "photo":"",
+        "className":"Carotte",
+        "name":"Carotte",
+        "description":"Lorem Ipsum is simply dummy text of the printing",
+        "price":0.40
+    },
+    {
+        "photo":"",
+        "className":"Courgette",
+        "name":"Courgette",
+        "description":"Lorem Ipsum is simply dummy text of the printing",
+        "price":0.60
+    },
+    {
+        "photo":"",
+        "className":"Poireaux",
+        "name":"Poireaux",
+        "description":"Lorem Ipsum is simply dummy text of the printing",
+        "price":0.70
+    },
+    {
+        "photo":"",
+        "className":"Pommes de terre",
+        "name":"Pommes de terre",
+        "description":"Lorem Ipsum is simply dummy text of the printing",
+        "price":0.20
+    },
+    {
+        "photo":"",
+        "name":"Navet",
+        "className":"Navet",
+        "description":"Lorem Ipsum is simply dummy text of the printing",
+        "price":0.30
+    }
+]

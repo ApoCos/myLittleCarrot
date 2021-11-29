@@ -1,0 +1,82 @@
+.burgerMenu {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    padding: 5px;
+    margin: 10px;
+    top: 0px;
+    opacity: 0.8;
+    /*button burger creation middle bar*/
+    span {
+        width: 60%;
+        height: 3px;
+        background-color: $clr-orange;
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 15%;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        transition: background-color 0.5s;
+    }
+    /*top / bottom burger bar icon*/
+    span::before, span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $clr-orange;
+    transition: transform 0.5s;
+    }
+    span::before {
+        transform: translateY(-10px);
+    }
+    
+    span::after {
+        transform: translateY(10px);
+    }
+    .burger-open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        padding-top: 25%;
+        right: 0;
+        z-index: -1;
+        opacity: 0.9;
+        height: 100vh;
+        width: 60%;
+        background-color: $clr-green;
+        a {
+            display: block;
+            color: $clr-white;
+            text-decoration: none;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
+    .burger-close {
+        visibility: hidden;
+    }
+}
+
+/* button animation*/
+.burgerMenu.active span {
+    background-color: transparent;
+}
+.burgerMenu.active span::before {
+    transform: rotate(45deg);
+}
+.burgerMenu.active span::after {
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 750px) {
+    .burgerMenu {
+        display: none;
+    }
+}

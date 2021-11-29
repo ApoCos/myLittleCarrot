@@ -1,0 +1,55 @@
+.cardsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .cardContent {
+        border: dashed 2px $clr-green;
+        border-radius: 50px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px;
+        padding: 10px;
+    }
+    p {
+        align-self: center;
+    }
+    .rectangle {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background: $clr-orange;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    button {
+        width: 200px;
+        border-radius: 10px;
+        border: solid 2px $clr-green;
+        margin: 10px;
+        padding: 10px;
+        background-color: $clr-white;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .cardsPage {
+        .cardContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 75%;
+            .cardImage {
+                width: 20%;
+            }
+            .nameItem {
+                width: 15%;
+            }
+            .cardDescription {
+                width: 45%;
+            }
+        }
+    }
+}

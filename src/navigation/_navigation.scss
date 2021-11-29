@@ -1,0 +1,33 @@
+.nav {
+    // position: fixed ;
+    background-color: $clr-white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    img {
+        height: 20px;
+    }
+    .menu {
+        display: none;
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: $clr-grey;
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .nav {
+            img {
+                padding: 15px;
+                height: 25px;
+            }
+        .menu {
+            display: block;
+        }
+    }
+}
